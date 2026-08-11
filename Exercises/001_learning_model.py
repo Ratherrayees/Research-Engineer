@@ -5,12 +5,12 @@ x = 2
 actual = 4
 
 prediction = x * w
-error = prediction - actual
+loss = prediction - actual
 
-absolute_loss = abs(error)
-squared_loss = error ** 2
+absolute_loss = abs(loss)
+squared_loss = loss ** 2
 
 print(f"Prediction: {prediction}")
-print(f"Error: {error}")
+print(f"Loss: {loss}")
 print(f"Absolute Loss: {absolute_loss}")
 print(f"Squared Loss: {squared_loss}")
