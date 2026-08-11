@@ -1,0 +1,1 @@
+this is my personal project to learn how llms work and how can i know more about their architecture and eac process from nothing to building a llm from scrach and call myself AI Research Engineer
