@@ -14,6 +14,9 @@ while loss > 0.01:  # continue until the error is small enough
         w -= 0.001  # decrease weight if prediction is too high
     else:
         w += 0.001  # increase weight if prediction is too low
+    # print every few thousand iterations weight and loss for debugging
+    if int(w * 1000) % 5000 == 0:
+        print(f"Current Weight: {w}, Loss: {loss}")
     # Recalculate the prediction and error
     prediction = x * w
     error = prediction - actual
