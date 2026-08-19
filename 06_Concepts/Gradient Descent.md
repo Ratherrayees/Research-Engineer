@@ -21,7 +21,7 @@ Gradient descent works by determining how the loss changes when a parameter chan
  I started with an initial weight of 8 and a set of input values. I set the learning rate to 0.01. On the first prediction, the model calculated the error, squared loss, and mean loss. The mean loss showed how wrong the model was overall and was also used to decide whether training should continue. The gradient was then calculated to determine how the weight should change in order to reduce the loss. The weight was adjusted according to the gradient and learning rate. After updating the weight, the model recalculated the predictions, errors, and loss, and repeated this process until the mean loss became small enough. For debugging, I printed some iterations and finally printed the final predictions and learned weight.
 ## What confused me
 - I was also initially confused about how the gradient can tell us which direction to move without manually trying different weight values.At first I confused the role of mean loss with the role of the gradient. I thought mean loss helped decide whether the weight should increase or decrease. I later understood that mean loss only tells me how wrong the model is overall, while the gradient tells me how changing the weight affects the loss and therefore which direction the weight should move.
-- I was also initially confused about how the gradient can tell us which direction to move without manually trying different weight values.
+
 ## Questions
 - How is the gradient actually calculated mathematically?
 - Why does the derivative give us the direction that reduces loss?
